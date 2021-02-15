@@ -6,6 +6,13 @@ for Arch Linux
 
 [![CircleCI](https://circleci.com/gh/nan1sa/dotfiles.svg?style=svg)](https://circleci.com/gh/nan1sa/dotfiles)
 
+## Required Packages
+
+- `base-devel`
+- `curl`
+- `git`
+- `openssh`
+
 ## Installation
 
 ```shell
