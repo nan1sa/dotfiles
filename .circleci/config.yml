@@ -10,7 +10,6 @@ jobs:
       - run: 'pacman -Syu --noconfirm'
       - run: 'pacman -S sudo openssh git curl --noconfirm'
       - run: 'useradd dotfiles'
-      - run: 'mkdir /etc/sudoers.d/'
       - run: 'echo "dotfiles ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/dotfiles'
       - run: 'chmod 440 /etc/sudoers.d/dotfiles'
       - run: 'curl -sSL https://link.nan1.casa/dotfiles | sudo -u dotfiles sh'
