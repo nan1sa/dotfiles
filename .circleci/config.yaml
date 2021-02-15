@@ -1,0 +1,9 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: archlinux/archlinux
+    steps:
+      - run: pacman -Syu --noconfirm
+      - run: pacman -S git curl --noconfirm
+      - run: curl -sSL https://link.nan1.casa/dotfiles | sh
