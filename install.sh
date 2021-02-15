@@ -4,14 +4,13 @@ set -eu
 
 cd
 
-mkdir .ssh/
-echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > .ssh/config
-
 git init
-git remote add origin git@github.com:nan1sa/dotfiles.git
+git remote add origin https://github.com/nan1sa/dotfiles.git
 git fetch origin master
 git reset --hard origin/master
 echo '*' > .git/info/exclude
+git remote remove origin
+git remote add origin git@github.com:nan1sa/dotfiles.git
 
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
