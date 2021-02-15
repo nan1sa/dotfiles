@@ -4,12 +4,12 @@ jobs:
     docker:
       - image: archlinux/archlinux
     steps:
-      - run: useradd dotfiles
-      - run: echo "dotfiles ALL=(ALL) NOPASSWD\: ALL" > /etc/sudoers.d/dotfiles
-      - run: chmod 440 /etc/sudoers.d/dotfiles
-      - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+      - run: 'useradd dotfiles'
+      - run: 'echo "dotfiles ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/dotfiles'
+      - run: 'chmod 440 /etc/sudoers.d/dotfiles'
+      - run: 'mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config'
       # https://github.com/qutebrowser/qutebrowser/commit/478e4de7bd1f26bebdcdc166d5369b2b5142c3e2
-      - run: patched_glibc=glibc-linux4-2.33-4-x86_64.pkg.tar.zst && curl -LO "https://repo.archlinuxcn.org/x86_64/$patched_glibc" && bsdtar -C / -xvf "$patched_glibc"
-      - run: pacman -Syu --noconfirm
-      - run: pacman -S openssh git curl --noconfirm
-      - run: curl -sSL https://link.nan1.casa/dotfiles | sudo -u dotfiles sh
+      - run: 'patched_glibc=glibc-linux4-2.33-4-x86_64.pkg.tar.zst && curl -LO "https://repo.archlinuxcn.org/x86_64/$patched_glibc" && bsdtar -C / -xvf "$patched_glibc"'
+      - run: 'pacman -Syu --noconfirm'
+      - run: 'pacman -S openssh git curl --noconfirm'
+      - run: 'curl -sSL https://link.nan1.casa/dotfiles | sudo -u dotfiles sh'
