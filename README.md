@@ -18,3 +18,7 @@ for Arch Linux
 ```shell
 curl -sSL https://link.nan1.casa/dotfiles | sh
 ```
+
+## License
+
+[MIT](./LICENSE)
