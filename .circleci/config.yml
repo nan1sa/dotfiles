@@ -9,7 +9,7 @@ jobs:
       - run: 'patched_glibc=glibc-linux4-2.33-4-x86_64.pkg.tar.zst && curl -LO "https://repo.archlinuxcn.org/x86_64/$patched_glibc" && bsdtar -C / -xvf "$patched_glibc"'
       - run: 'pacman -Syu --noconfirm'
       - run: 'pacman -S sudo openssh git curl --noconfirm'
-      - run: 'useradd dotfiles'
+      - run: 'useradd -m dotfiles'
       - run: 'echo "dotfiles ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/dotfiles'
       - run: 'chmod 440 /etc/sudoers.d/dotfiles'
       - run: 'curl -sSL https://link.nan1.casa/dotfiles | sudo -u dotfiles sh'
