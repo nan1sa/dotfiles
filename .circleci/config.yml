@@ -5,7 +5,7 @@ jobs:
       - image: archlinux/archlinux
     steps:
       - run: useradd dotfiles
-      - run: echo "dotfiles ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/dotfiles
+      - run: echo "dotfiles ALL=(ALL) NOPASSWD\: ALL" > /etc/sudoers.d/dotfiles
       - run: chmod 440 /etc/sudoers.d/dotfiles
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       # https://github.com/qutebrowser/qutebrowser/commit/478e4de7bd1f26bebdcdc166d5369b2b5142c3e2
