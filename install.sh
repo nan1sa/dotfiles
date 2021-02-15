@@ -3,6 +3,10 @@
 set -eu
 
 cd
+
+mkdir ~/.ssh/
+echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+
 git init
 git remote add origin git@github.com:nan1sa/dotfiles.git
 git fetch origin master
