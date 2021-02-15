@@ -18,5 +18,5 @@ makepkg -si --noconfirm
 cd ../
 rm -rf yay-bin
 
-curl https://sh.rustup.rs -sSf | sh
+curl https://sh.rustup.rs -sSf | sh -- -y
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0
