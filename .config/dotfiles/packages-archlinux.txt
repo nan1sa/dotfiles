@@ -1,0 +1,16 @@
+alacritty
+bat
+exa
+fzf
+ghq-bin
+git
+gnupg
+keychain
+neovim
+noto-fonts-cjk
+openssh
+thefuck
+tmux
+xclip
+xsel
+zsh
