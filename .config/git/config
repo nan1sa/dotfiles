@@ -1,0 +1,17 @@
+[user]
+    name = nan1sa
+    email = nan1sa@nan1.casa
+
+[pull]
+	rebase = false
+
+[ghq]
+    user = nan1sa
+    root = ~/.repos
+
+[url "git@github.com:nan1sa"]
+    insteadOf = https://github.com/nan1sa
+    pushInsteadOf = https://github.com/nan1sa
+
+[init]
+	defaultBranch = master
