@@ -18,7 +18,7 @@ makepkg -si --noconfirm
 cd ../
 rm -rf yay-bin
 
-yay -S $(cat .config/dotfiles/packages-archlinux.txt) --no-confirm
+yay -S $(cat .config/dotfiles/packages-archlinux.txt) --noconfirm
 
 sh <(curl https://sh.rustup.rs -sSf) -y
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0
