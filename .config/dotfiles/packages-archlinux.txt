@@ -5,6 +5,7 @@ fzf
 ghq-bin
 git
 gnupg
+haskell-language-server-bin
 keychain
 neovim
 noto-fonts-cjk
