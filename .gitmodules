@@ -1,3 +1,3 @@
-[submodule "/home/nan1sa/.repos/github.com/uasi/skk-emoji-jisyo"]
-	path = /home/nan1sa/.repos/github.com/uasi/skk-emoji-jisyo
+[submodule ".repos/github.com/uasi/skk-emoji-jisyo"]
+	path = .repos/github.com/uasi/skk-emoji-jisyo
 	url = https://github.com/uasi/skk-emoji-jisyo.git
