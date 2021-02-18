@@ -8,6 +8,7 @@ git init
 git remote add origin https://github.com/nan1sa/dotfiles.git
 git fetch origin master
 git reset --hard origin/master
+git submodule update --init
 echo '*' > .git/info/exclude
 git remote remove origin
 git remote add origin git@github.com:nan1sa/dotfiles.git
