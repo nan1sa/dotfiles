@@ -11,4 +11,5 @@ jobs:
       - run: 'useradd -m dotfiles'
       - run: 'echo "dotfiles ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/dotfiles'
       - run: 'chmod 440 /etc/sudoers.d/dotfiles'
+      - run: 'sudo -u git config --global init.defaultBranch master'
       - run: 'curl -sSL https://link.nan1.casa/dotfiles | sudo -u dotfiles sh'
