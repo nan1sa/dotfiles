@@ -6,9 +6,22 @@ for Arch Linux
 
 [![CircleCI](https://circleci.com/gh/nan1sa/dotfiles.svg?style=svg)](https://circleci.com/gh/nan1sa/dotfiles)
 
-## OS
+## Files
 
-- Arch Linux
+```
+.circleci/config.yml
+.config/dotfiles/packages-archlinux.txt
+.config/git/config
+.config/git/ignore
+.config/nvim/init.vim
+.config/tmux/tmux.conf
+.gitmodules
+.repos/github.com/uasi/skk-emoji-jisyo
+.zshrc
+LICENSE
+README.md
+install.sh
+```
 
 ## Required Packages
 
